@@ -31,8 +31,6 @@ for PBF_FILE in "${PBF_FILES[@]}"; do
     2>&1 echo '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!';
     
     2>&1 echo "Generating polylines from ${PBF_FILE} failed! The file is too large.";
-    2>&1 echo "Exiting...";
-    exit 1
   done
 
   # convert pbf file to 0sv (polylines) format, appending results to polyline file
